@@ -68,6 +68,51 @@
                             <div class="col-sm-6 col-sm-offset-3"><input id="room-name" type="text" class="form-control" placeholder="Enter Lobby Name"></div>
                         </div>
 
+                        <div class="form-group row">
+                            <div class="col-sm-6 col-sm-offset-3"><input id="user-name" type="text" class="form-control" placeholder="Enter Your Name"></div>
+                        </div>                        
+
+                        <div class="form-inline select_time">
+                            <!-- selection box for time duration -->
+                            <label class="time_name">Time Duration (min):</label>
+                            <select class="form-control" id="timer-pref">
+                              <option value="5">5</option>
+                              <option value="10">10</option>
+                              <option value="15">15</option>
+                              <option value="20">20</option>
+                            </select>
+                        </div>
+
+                        <div class="form-inline">
+                            <!-- selection box for time duration -->
+                            <label class="time_name">Room Type: </label>
+                            <select class="form-control" id="room-type-pref">
+                              <option>Private</option>
+                              <option>Public</option>
+                            </select>
+                        </div>                
+
+                        <div class="form-group row">
+                            <div class="col-sm-6 col-sm-offset-3"><button class="btn btn-warning join-button" id="join-meeting">Create</button></div>
+                        </div>
+
+                        <h3>-Or-</h3>
+
+
+                       <h2 class="enter-prompt center" >Join a room: </h2>
+                
+                        <div class="form-group row">
+                            <div class="col-sm-6 col-sm-offset-3"><input id="room-name" type="text" class="form-control" placeholder="Enter Lobby Name"></div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <div class="col-sm-6 col-sm-offset-3"><input id="user-name" type="text" class="form-control" placeholder="Enter Your Name"></div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-6 col-sm-offset-3"><button class="btn btn-warning join-button" id="join-meeting">Join</button></div>
+                        </div>                        
+
 
                     </form>
                 </div>
