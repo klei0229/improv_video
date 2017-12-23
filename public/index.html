@@ -1,16 +1,57 @@
 <!DOCTYPE HTML>
 <html lang="US">
-	<title>Improv Chatroom</title>
-
-
+	
 <head>
- 
+ 	<title>Improv Chatroom</title>
+   	<meta charset="utf-8">
+
+     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+     <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic'>
+
 </head>
 
 
 
 <body>
+<!-- navbar div -->
+    <div>
+	    <!-- bootstrap navbar-->
+	   <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+	   <div class="container topnav">
+	   
+	   <div class="navbar-header">
+	   		<a class="navbar-brand topnav" target="_blank">Improv Chatroom</a>
+	   </div>
+	   
+	   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                <ul class="nav navbar-nav navbar-right">
+	                    <li>
+	                        <a href="{{url_for('index')}}">Home</a>
+	                    </li>
+	                    <li>
+	                        <a href="{{url_for('browse')}}">Watch</a>
+	                    </li>
+	                    <li>
+	                        <a href="https://improvproject2.herokuapp.com/">Create</a>
+	                    </li>
+	                   	<li>
+	                        <a href="#User Profile">User Profile</a>
+	                    </li>
+	       
+	                    <li>
+	                        <a href="{{url_for('login')}}">Log in</a>
+	                    </li>
+	                    <li>
+	                         <a href="{{url_for('signup')}}">Sign up</a>
+	                    </li>
 
+	                </ul>
+	            </div>
+	        </div>
+	    </nav>
+    </div>
+<!-- end of navbar div -->
 </body>
 
 </html>
