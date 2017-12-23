@@ -1,3 +1,60 @@
+body,
+html {
+
+    margin:auto;
+    width: 80%;
+    height: 100%;
+}
+
+body{
+background-color:gray;
+}
+
+.center{
+  text-align:center;
+}
+
+.line-spacing{
+  line-height:350%;
+}
+
+
+.body-div-1{
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:-410px;
+  margin-left:-500px;
+  background-color:white;
+  height:710px;
+  width:1000px;
+}
+
+h1
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+
+h1{
+  font-size:35px;
+  font-weight:bold;
+
+}
+
+h2{
+  font-size:25px;
+  font-weight:bold;
+}
+
+h3{
+  font-size:18px;
+}
 
 .topnav {    
     font-size: 16px;
