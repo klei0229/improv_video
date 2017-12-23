@@ -1,3 +1,5 @@
+//Index.js contains code provided by agora's template video file that is required to build basic video chatrooms.
+//
 (function($) {
     $(function() {
         var maxRateSlider = createSlider();
