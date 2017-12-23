@@ -48,6 +48,61 @@
         </div>
 
         <!-- end main container -->
+        <!-- second container -->
+        <div class = "container-2">
+            <h1>Session Details</h1>
+            <h3>Improv with the other performer using the different prompts shown below. Prompts will be randomly generated. 
+
+            </h3>
+
+                <div id="clockdiv">
+                    <script>
+                    function startTimer() {
+                    
+                    console.log("Start Timer was pressed.")
+                    display = document.querySelector('#room-timer');
+                    duration = 5*60;
+
+                    var timer = duration, minutes, seconds;
+                    
+                    setInterval(function () {
+                        minutes = parseInt(timer / 60, 10)
+                        seconds = parseInt(timer % 60, 10);
+
+                        minutes = minutes < 10 ? "0" + minutes : minutes;
+                        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                        display.textContent = "Room Timer: " + minutes + ":" + seconds;
+
+                        if (--timer < 0) {
+                            timer = duration;
+                        }
+                    }, 1000);
+                }
+
+                    </script>
+                </div>
+
+           
+
+            
+            <h3 id = "room-timer">Room Timer: 5:00</h3>         
+            <h3 id = "promptid">Current Prompt: Visiting the dentist</h3>
+            <h3 id = "actor1">Actor 1: Dentist</h3>
+            <h3 id = "actor2">Actor 2: Patient</h3>
+
+            <button id="startbutton"  onclick="startTimer()">Start Timer</button>
+
+            <button id="nextButton" onclick="nextPrompt()">Next Prompt</button>
+            
+            <h3>The session will end after the timer has reached 0:00</h3>
+
+            
+                <iframe src="http://improvproject3.herokuapp.com/" width="400" height="460">
+                    <p>Text Chat Box.</p>
+                </iframe>
+                
+        </div>
 
 
 
