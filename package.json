@@ -1,0 +1,10 @@
+{
+  "name": "Improv Chatroom Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "3.4.8"
+  } 
+}
